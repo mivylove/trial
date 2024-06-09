@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1px; /* To visually connect the tabs with the text box */
+}
+
+.tab {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ccc;
+    border-bottom: none; /* Remove bottom border to connect with the text box */
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    flex: 1;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background-color: #0056b3;
+}
+
+.tab:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px; /* Round the bottom corners only */
+    resize: none;
+    background-color: #fff;
+    margin-bottom: 15px;
+    overflow: auto; /* Make the text box scrollable */
+}
+
+audio {
+    width: 100%;
+}
