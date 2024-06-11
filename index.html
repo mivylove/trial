@@ -7,18 +7,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="tabs">
-            <button class="tab active" id="tab-x" onclick="showContent('x')">X</button>
-            <button class="tab" id="tab-y" onclick="showContent('y')">Y</button>
+    <div class="password-prompt" id="password-prompt">
+        <div class="password-input-container">
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button onclick="checkPassword()">Submit</button>
         </div>
-        <div class="content">
-            <textarea id="text-box" readonly></textarea>
-            <audio id="audio-player" controls>
-                <source id="audio-source" src="" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    </div>
+    <div id="main-content-wrapper" class="main-content-wrapper">
+        <div class="menu">
+            <p>Index</p>
+            <ul>
+                <li class="submenu" onclick="openPDF('assets/chapter1.pdf')">Chapter 1</li>
+                <li class="submenu" onclick="openPDF('assets/chapter2.pdf')">Chapter 2</li>
+                <li class="submenu" onclick="openPDF('assets/chapter3.pdf')">Chapter 3</li>
+                <li class="submenu" onclick="openPDF('assets/chapter4.pdf')">Chapter 4</li>
+                <li class="submenu" onclick="openPDF('assets/chapter5.pdf')">Chapter 5</li>
+                <li class="submenu" onclick="openPDF('assets/chapter6.pdf')">Chapter 6</li>
+                <li class="submenu" onclick="openPDF('assets/chapter7.pdf')">Chapter 7</li>
+                <li class="submenu" onclick="openPDF('assets/chapter8.pdf')">Chapter 8</li>
+                <li class="submenu" onclick="openPDF('assets/chapter9.pdf')">Chapter 9</li>
+                <li class="submenu" onclick="openPDF('assets/chapter10.pdf')">Chapter 10</li>
+                <li class="submenu" onclick="openPDF('assets/chapter11.pdf')">Chapter 11</li>
+                <li class="submenu" onclick="openPDF('assets/chapter12.pdf')">Chapter 12</li>
+                <li class="submenu" onclick="openContent('video', 'assets/vid.mp4')">Had Some Idea</li>
+                <li class="submenu" onclick="openContent('image', 'assets/image.jpeg')">Hnmmm!</li>
+              <!-- Add more submenu items as needed -->
+            </ul>
+          </div>
+        <div class="container">
+            <div class="title">
+                <p>Blah!!!</p>
+            </div>
+            <div class="tabs">
+                <button class="tab active" id="tab-x" onclick="showContent('x')">X</button>
+                <button class="tab" id="tab-y" onclick="showContent('y')">Y</button>
+            </div>
+            <div class="content">
+                <textarea id="text-box" readonly></textarea>
+                <audio id="audio-player" controls>
+                    <source id="audio-source" src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
+        <div class="user-wishes">
+            <textarea id="wishes-box" placeholder="Enter your wishes here..."></textarea>
+            <button id="submit-wish-button" onclick="submitWish()">Submit Wish</button>
+        </div>        
+    </div>
+    <div id="display-container" class="display-container">
+        <button class="close-btn" onclick="closeContent()">×</button>
+        <iframe id="pdf-viewer" class="display-item" style="display: none;"></iframe>
+        <img id="image-viewer" class="display-item" style="display: none;" />
+        <video id="video-player" class="display-item" controls style="display: none;">
+            <source id="video-source" src="" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
     </div>
     <script src="script.js"></script>
 </body>
