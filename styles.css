@@ -203,6 +203,11 @@ audio {
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* Add a subtle border to the top of the first submenu */
 }
 
+.submenu:hover {
+    background-color: #ca6eeb4b;
+    transform: scale(1.02); 
+}
+
 .display-container {
     margin-top: 20px; /* Adjust as needed */
     text-align: center;
