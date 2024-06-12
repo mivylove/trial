@@ -18,11 +18,13 @@ async function fetchText(filePath) {
 async function showContent(tab) {
     const content = contents[tab];
     const text = await fetchText(content.textFile);
-    document.getElementById('text-box').value = text;
+    document.getElementById('textbox').value = text;
     
     const audioSource = document.getElementById('audio-source');
     audioSource.src = content.audio;
     document.getElementById('audio-player').load();
+
+    textbox.scrollTop = 0;
 
     // Update active tab
     document.querySelectorAll('.tab').forEach(button => button.classList.remove('active'));
