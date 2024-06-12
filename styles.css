@@ -202,7 +202,7 @@ audio {
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 20px; /* Add padding to the menu */
     color: #fff; /* Text color */
-    max-height: calc(100vh - 700px); /* Set maximum height to fit within viewport */
+    max-height: calc(100vh - 70%); /* Set maximum height to fit within viewport */
 }
 
 .menu ul {
