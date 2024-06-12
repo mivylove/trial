@@ -258,3 +258,20 @@ audio {
 .close-btn:hover {
     background-color: #ff1c1c;
 }
+textarea::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #44444400; /* Background of the scrollbar track */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #cbcfd7; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 2px solid #60395f00; /* Adds a border around the scrollbar thumb */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #555555; /* Color of the scrollbar thumb when hovered */
+}
