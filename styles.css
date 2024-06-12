@@ -142,7 +142,7 @@ audio {
     position: absolute;
     right: 0;
     top: 0;
-    width: 300px; /* Width for the wish box */
+    width: 17.5%; /* Width for the wish box */
     display: flex;
     flex-direction: column; /* Stack the textarea and button */
     align-items: center;
