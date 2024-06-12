@@ -134,7 +134,7 @@ audio {
     font-size: 40px; /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add margin at the bottom to create space */
     position: relative; /* Enable positioning */
-    top: -3vh; /* Move the title up by 20 pixels */
+    top: -2.6vh; /* Move the title up by 20 pixels */
     color: rgba(255, 255, 255, 0.743);
 }
 
