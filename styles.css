@@ -4,9 +4,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #b15de2;
+    /*background: linear-gradient(135deg, #b15de2, #e43ba0);
+    /*background-color: #b15de2;*/
     font-family: Arial, sans-serif;
     text-align: center;
+    background: linear-gradient(270deg, #e43ba0, #b15de2, #e43ba0);
+    background-size: 600% 600%;
+    animation: GradientBackground 16s ease infinite;
+}
+
+@keyframes GradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .password-prompt {
@@ -110,6 +120,7 @@ audio {
     margin-bottom: 20px; /* Add margin at the bottom to create space */
     position: relative; /* Enable positioning */
     top: -80px; /* Move the title up by 20 pixels */
+    color: rgba(255, 255, 255, 0.743);
 }
 
 .user-wishes {
@@ -143,6 +154,7 @@ audio {
     color: #ffffff; /* Change placeholder text color to white */
 }
 
+
 #submit-wish-button {
     align-self: flex-end;
     padding: 10px 20px;
@@ -170,7 +182,8 @@ audio {
     left: 0;
     width: 200px; /* Adjust the width as needed */
     height: 100%; /* Set full height */
-    background-color: #b15de2; /* Change the background color */
+    background-color: #0057b300;
+    /*background-color: #b15de2; /* Change the background color */
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 20px; /* Add padding to the menu */
     color: #fff; /* Text color */
@@ -258,6 +271,7 @@ audio {
 .close-btn:hover {
     background-color: #ff1c1c;
 }
+
 textarea::-webkit-scrollbar {
     width: 8px; /* Width of the entire scrollbar */
 }
