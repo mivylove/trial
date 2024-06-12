@@ -144,10 +144,22 @@ audio {
 }
 
 #submit-wish-button {
-    align-self: flex-end; /* Align the submit button to the end (bottom) of the div */
-    margin-top: 10px; /* Add some spacing between the wishes box and the submit button */
-    margin-right: 158px;
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 40%;
     height: 40px;
+    cursor: pointer;
+    border-radius: 10px; /* Adjust the value to make the sides more round */
+    background-color: rgba(240, 84, 211, 0.801);
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#submit-wish-button:hover {
+    background-color: #7856e7;
 }
 
 .menu {
